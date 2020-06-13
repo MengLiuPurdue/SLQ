@@ -35,6 +35,17 @@ And then everything should just work.     This will install localgraphclustering
 for the system python3. But then we use PyCall conda and just point it at
 the needed directory. Try include("CRD.jl").
 
+Experiments
+-----------
+
+- Visualization of image boundaries: `experiment-image-boundary.jl`
+- Visualization of effects in grid graph: `experiment-grid-vis.jl`
+- Experiment on LFR graphs: `experiment-sparsity-runtime.jl` and 
+  results analysis `visualization-running-time.jl`
+- Experiment on Facebook graphs: `experiment-faebook.jl`and
+  results analysis `visualization-facebook-comapct.jl` (this makes a lot of images)
+  and a table to put into a latex document.
+  
 
 
 
