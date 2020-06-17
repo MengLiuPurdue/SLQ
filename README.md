@@ -1,5 +1,17 @@
 # SLQ
-code for SLQ project, see our arXiv paper (will update a link once it's up)
+code for SLQ project, see our arXiv paper 
+
+	@Article{Liu-preprint-slq,
+	  author     = {Meng Liu and David F. Gleich},
+	  journal    = {arXiv},
+	  title      = {Strongly local p-norm-cut algorithms for semi-supervised learning and local graph clustering},
+	  year       = {2020},
+	  pages      = {2006.08569},
+	  volume     = {cs.SI},
+	  arxiv      = {http://arxiv.org/abs/2006.08569},
+	  mysoftware = {https://github.com/MengLiuPurdue/SLQ},
+	}
+
 
 To run our code, simply `include("SLQ.jl")` This has minimal dependencies. Then
 to run the code on an Erdos-Renyi graph, run
