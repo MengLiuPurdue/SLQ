@@ -18,7 +18,10 @@ include("LocalClusteringObjs.jl")
 
 #colors = ["#1f77b4", "#ff7f0e", "#d62728", "purple","brown","#2ca02c","grey"]
 #colors = ["#7fc97f","#beaed4","#fdc086","#ffff99","#386cb0","#f0027f","#bf5b17"]
-colors = ["#1b9e77","#d95f02","#7570b3","#e7298a","#66a61e","#e6ab02","#a6761d"]
+# colors = ["#1b9e77","#d95f02","#7570b3","#e7298a","#66a61e","#e6ab02","#a6761d"]
+# colors = ["#d73027","#f46d43","#fdae61","#fee090","#abd9e9","#74add1","#4575b4"]
+colors = [(230,159,0),(86,180,233),(0,158,115),(240,228,66),(0,114,178),(213,94,0),(204,121,167)]
+colors = [(i[1]/255,i[2]/255,i[3]/255) for i in colors]
 records_crd_3 = load("results/sparsity_runtime_crd_h_3.jld2")
 records_crd_5 = load("results/sparsity_runtime_crd_h_5.jld2")
 records_acl = load("results/sparsity_runtime_acl.jld2")
@@ -382,7 +385,7 @@ end
 
 function fancy_axis(ax)
     # use a gray background
-    ax.set_facecolor("#E6E6E6")
+    # ax.set_facecolor("darkgrey")
     ax.set_axisbelow(true)
 
     # draw solid white grid lines
