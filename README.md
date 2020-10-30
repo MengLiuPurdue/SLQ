@@ -57,6 +57,8 @@ Experiments
 - Experiment on Facebook graphs: `experiment-faebook.jl`and
   results analysis `visualization-facebook-comapct.jl` (this makes a lot of images)
   and a table to put into a latex document.
+- Experiment on DBLP and LiveJournal graphs: `experiment-huge-graph.jl` and results analysis `visualization-huge-graph-compact.jl`
+- Experiemnt on varying seeds in appendix: `experiment-vary-seeds.jl`
   
 
 
