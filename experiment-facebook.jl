@@ -315,7 +315,7 @@ end
 
 
 ntrials = 50
-datasets = ["UCLA26.mat","Brown11.mat","Duke14.mat","UPenn7.mat","Yale4.mat","Stanford3.mat","MIT8.mat","Cornell5.mat"]
+datasets = ["data/UCLA26.mat","data/Brown11.mat","data/Duke14.mat","data/UPenn7.mat","data/Yale4.mat","data/Stanford3.mat","data/MIT8.mat","data/Cornell5.mat"]
 #datasets = ["Colgate88.mat","Johns Hopkins55.mat","Yale4.mat","Stanford3.mat"]
 
 time_crd_5 = @elapsed records_crd_5 = eval_crd_facebook(datasets,ntrials,h=5,eval_labels=[2008.0,2009.0])
@@ -362,7 +362,7 @@ save("results/records-gcn.jld2",records_gcn)
 
 
 include("GCN.jl")
-file = "UCLA26.mat"
+file = "data/UCLA26.mat"
 vars = matread(file)
 A = vars["A"]
 A = round.(Int,A)
